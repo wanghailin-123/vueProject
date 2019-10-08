@@ -1,0 +1,81 @@
+//智能交易--账户--交易订单的table组件样式
+.dingdan{
+    .el-table::before{
+        background: none;
+    }
+    // .cell{
+    //     color: #DCDC0A;
+    // }
+}
+//智能交易--跟单--跟随账户的table组件样式
+.gendan{
+    
+    .el-input__inner{
+        background: black;
+        border: none;
+    }
+    
+    .el-table{
+        thead tr{
+            //background: red;
+        }
+        
+    }
+    .el-table th,.el-table tr{
+        background: none;
+        //text-align: center;
+    }
+    .el-table td, .el-table th.is-leaf{
+        border-bottom:none;
+    }
+    .el-table--striped .el-table__body tr.el-table__row--striped td{
+        background: none;
+    }
+    .el-table--border::after, .el-table--group::after, .el-table::before{
+       background: none;
+    }
+
+    .el-table--enable-row-hover .el-table__body tr:hover>td{
+        //background: red;
+    }
+    // &>>>.el-select-dropdown{
+    //     background: red !important;
+    // }
+}
+//首页--银期转账--银行卡--期货的table组件样式
+.zhuanzhang{
+    .el-tabs--card>.el-tabs__header,.el-tabs--card>.el-tabs__header .el-tabs__item.is-active,.el-tabs--card>.el-tabs__header .el-tabs__nav,.el-tabs--card>.el-tabs__header .el-tabs__item{
+        border: none;
+    }
+    .el-tabs__item{
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:300;
+        color:#585858;
+        
+        background:rgba(255,255,255,1);
+        //box-shadow:5px #000000;
+        border-radius:4px;    
+    }
+ 
+    .el-tabs__item.is-active{
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        //color:#585858;
+        color: #B3B3B3;
+        //background:rgba(82,90,101,1) ;
+        //border-radius:4px;
+        border:1px dotted #585858 !important;
+        
+    }
+}
+// 去除input类型为number后面的加减号
+//在chrome下
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+//Firefox下
+input[type="number"]{-moz-appearance:textfield;}
